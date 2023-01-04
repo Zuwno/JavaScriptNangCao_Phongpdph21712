@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenge #1</title>
+  </head>
+  <body>
+    <p>Marks BMI:</p>
+    <p id="ShowBMI1"></p>
+    <p>John BMI:</p>
+    <p id="ShowBMI2"></p>
+    <p>Mark BMI > Join BMI</p>
+    <p id="CheckBMI"></p>
+  </body>
+  <script>
+    const ShowBMI1 = document.querySelector("#ShowBMI1");
+    const ShowBMI2 = document.querySelector("#ShowBMI2");
+    const CheckBMI = document.querySelector("#CheckBMI");
+    // Data
+    const MarksW = 78;
+    const MarksH = 1.69;
+    const JohnW = 92;
+    const JohnH = 1.95;
+    const MarksBMI = MarksW / (MarksH * MarksH);
+    const JohnBMI = JohnW / (JohnH * JohnH);
+    const markHigherBMI = MarksBMI > JohnBMI ;
+    ShowBMI1.innerHTML = MarksBMI;
+    ShowBMI2.innerHTML = JohnBMI;
+    CheckBMI.innerHTML = markHigherBMI ;
+  </script>
+</html>
