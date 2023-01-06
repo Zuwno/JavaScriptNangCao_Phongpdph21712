@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3 - Coding Challenge #1</title>
+  </head>
+  <body>
+    <script>
+      const calcAverage = (a ,b ,c ) => (a + b +c )/3;
+      const DolphinsScore1 = calcAverage(44,23,71);
+      const KoalasScore1 = calcAverage(65,54,49);
+      const DolphinsScore2 = calcAverage(85,54,41);
+      const KoalasScore2 = calcAverage(23,34,27);
+      function checkWinner(avgDolhins,avgKoalas)
+      {
+        if (avgDolhins >= avgKoalas *2)
+        {
+            console.log(`Đội Dolhins chiến thắng với tỷ số ${avgDolhins} - ${avgKoalas}`)
+        }
+        else if (avgKoalas >= avgDolhins *2)
+        {
+            console.log(`Đội Koalas chiến thắng với tỷ số ${avgKoalas} - ${avgDolhins}`)
+        }
+        else
+        {
+            console.log("Không có đội chiến thắng")
+        }
+      }
+      console.log(`Đội win trận 1`);
+      checkWinner(DolphinsScore1,KoalasScore1);
+      console.log(`Đội win trận 2`);
+      checkWinner(DolphinsScore2,KoalasScore2);
+
+      
+    </script>
+  </body>
+</html>

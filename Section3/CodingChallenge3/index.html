@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3 - Coding Challenge #3</title>
+  </head>
+  <body>
+    <script>
+      // Data
+
+      const  MarkInfo = 
+      {
+        name: 'Mark Miller',
+        weight :78,
+        height: 1.69,
+        calcBMI : function()
+      {
+        this.bmi = this.weight / this.height *2
+        return this.bmi;
+      }
+      }
+      const  JohnInfo = 
+      {
+        name: 'John Smith',
+        weight :92,
+        height: 1.95,
+        calcBMI : function()
+      {
+        this.bmi = this.weight / this.height *2
+        return this.bmi;
+      }
+      }
+
+      MarkInfo.calcBMI();
+      JohnInfo.calcBMI();
+
+      
+      if (MarkInfo.calcBMI() > JohnInfo.calcBMI()) {
+        console.log (`Mark có chỉ số BMI là ${MarkInfo.bmi} cao hơn John  ${JohnInfo.bmi}`)
+        
+      } else {
+        console.log (`John có chỉ số BMI là ${JohnInfo.bmi} cao hơn Mark  ${MarkInfo.bmi}`)
+      }
+    </script>
+  </body>
+</html>
